@@ -1,0 +1,155 @@
+/* 主页面 */
+.home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* 主页背景 */
+.home-back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -999;
+}
+
+.home-back video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* 主页文字 */
+.home-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-text h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* 副标题 */
+.home-text #text {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+    position: relative;
+    white-space: nowrap;
+    /*禁止换行*/
+    animation: typewriting 10s steps(9) infinite;
+    overflow: hidden;
+
+}
+
+/* 光标 */
+.home-text #text::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 20px;
+    background-color: #fff;
+    animation: cursor 1s ease-in-out infinite;
+}
+
+/* 光标动画 */
+@keyframes cursor {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/* 打字动画 */
+@keyframes typewriting {
+    0% {
+        width: 0;
+    }
+
+    40% {
+        width: 9em;
+    }
+
+    80% {
+        width: 9em;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+/* 英文的动画 */
+@keyframes typewritingEnglish {
+    0% {
+        width: 0;
+    }
+
+    40% {
+        width: 27ch;
+    }
+
+    80% {
+        width: 27ch;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+/* 主页下滑按钮 */
+.downward-btn {
+    position: absolute;
+    bottom: 0;
+    animation: downward 1.5s ease infinite;
+}
+.downward-btn i {
+    font-size: 20px;
+    color: #000;
+}
+
+/* 下滑按钮的动画 */
+@keyframes downward {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 10px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+/* 信息页 */
+.information{
+    height: 100vh;
+    background: linear-gradient(120deg,#7e6bff,#ffc0ff);
+    position: relative;
+}
+
+
+
+/* 版权栏 */
+.copyright{
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}

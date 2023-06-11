@@ -1,0 +1,100 @@
+/* 我的个人信息 */
+.personal-details_box{
+    width: 100%;
+    display: flex;
+}
+/* 个人信息 */
+.personal-details{
+    border: 1px solid #fff;
+    height: 80vh;
+    width: 340px;
+    position: relative;
+    top: 20px;
+    left: 150px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url(../img/background/QQ图片20230610220237.png) no-repeat;
+    background-size: 50%;
+    background-position: 120% 100%;
+}
+/* 头像 */
+.personal-details .avatar{
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.gender.avatar i{
+    margin-top: 5px;
+}
+/* 简介 */
+.personal-details .introduction{
+    width: 300px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px dashed;
+}
+.personal-details .introduction p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+#name{
+    cursor: pointer;
+}
+
+/* 联系方式 */
+.qq{
+    padding: 25px;
+    width: 300px;
+    border-bottom: 1px dashed;
+    display: flex;
+    justify-content: center;
+}
+.qq i{
+    font-size: 25px;
+    padding: 0px 10px;
+    color: #000;
+    cursor: pointer;
+}
+/* 详细信息 */
+.details{
+    margin-top: 40px;
+    width: 300px;
+    height: 150px;
+    position: relative;
+    border-bottom: 1px dashed;
+}
+.details .left,.right{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+}
+.details .left{
+    left: 0;
+}
+.details .right {
+    right: 0;
+}
+.details .right span{
+    text-align: right;
+}
+/* 留言按钮 */
+.leave-word{
+    margin-top: 40px;
+    padding: 15px;
+    background: #efb5ff;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, .3);
+}
+.leave-word a{
+    color: #fff;
+}
