@@ -1,0 +1,78 @@
+/* 首页 */
+#home-page {
+    /* border: 1px solid; */
+    height: 100vh;
+    max-width: 100vw;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 80px;
+    padding-left: 50px;
+    padding-top: 20px;
+    overflow-x: scroll;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+/* 图片样式 */
+.imge-box {
+    width: 250px;
+    height: 250px;
+}
+
+.imge-box_big {
+    width: 300px;
+    height: 300px;
+}
+
+/* 小图公共样式 */
+.right-rotation_small,
+.left-rotation_small {
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .4);
+}
+
+.right-rotation_small:hover,
+.left-rotation_small:hover,
+.right-rotation_big:hover,
+.left-rotation_big:hover {
+    transform: rotate(0);
+}
+
+/* 大图公共样式 */
+.right-rotation_big,
+.left-rotation_big {
+    height: 350px;
+    width: 350px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .4);
+}
+
+/* 右旋 */
+.right-rotation_small,
+.right-rotation_big {
+    transform: rotate(15deg);
+}
+
+/* 左旋 */
+.left-rotation_small,
+.left-rotation_big {
+    transform: rotate(-15deg);
+}
+
+/* 返回按钮 */
+.back-btn{
+    position: fixed;
+}
